@@ -68,8 +68,15 @@ nav {
   color: #00c300;
 }
 
+form {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
 
-
+/*.form-control {
+  width: 50;
+}*/
 
 
 
