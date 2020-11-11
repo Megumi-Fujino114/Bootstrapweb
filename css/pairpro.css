@@ -54,3 +54,23 @@ nav {
   padding: 30px;
 }
 
+.fa-instagram {
+  color:#fff;
+  background:radial-gradient(at 20% 120%,orange, #f15a4d 25%, #f13f79 55%, #9933ff 100%) no-repeat;
+  border-radius:20%;
+}
+
+.fa-facebook-square {
+  color:#3B5998;
+}
+
+.fa-line {
+  color: #00c300
+}
+
+
+
+
+
+
+
