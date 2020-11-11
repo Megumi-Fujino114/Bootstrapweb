@@ -10,33 +10,35 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
    <link rel="stylesheet" href="css/swiper.css">
    <script src="https://kit.fontawesome.com/9e1bf99b51.js" crossorigin="anonymous"></script>
+     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="js/pairprojQuery.js"></script>
   </head>
 
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-  <header>
+  <header id="d1-jump">
   	<div class="container">
       <dir class="row">
-          <div class="col-2"><button type="button" class="btn btn-outline-primary">TOP</button></div>
-          <div class="col-2"><button type="button" class="btn btn-outline-secondary">SHOP</button></div>
-          <div class="col-2"><button type="button" class="btn btn-outline-success">MEDIA&NEWS</button></div>
-          <div class="col-2"><button type="button" class="btn btn-outline-danger">RECRUIT</button></div>
-          <div class="col-2"><button type="button" class="btn btn-outline-warning">COMPANY</button></div>
-          <div class="col-2"><button type="button" class="btn btn-outline-info">CONTACT</button></div>
+          <div class="col-2"><button type="button" class="btn btn-outline-primary" id="d1">TOP</button></div>
+          <div class="col-2"><button type="button" class="btn btn-outline-secondary" id="d2">SHOP</button></div>
+          <div class="col-2"><button type="button" class="btn btn-outline-success" id="d3">MEDIA&CATS</button></div>
+          <div class="col-2"><button type="button" class="btn btn-outline-danger" id="d4">VALUE</button></div>
+          <div class="col-2"><button type="button" class="btn btn-outline-warning" id="d5">MAP</button></div>
+          <div class="col-2"><button type="button" class="btn btn-outline-info" id="d6">CONTACT</button></div>
       </dir>
     <div>
   </header>
 
   <main><img src="img/cat1.jpg"></main>
 
-  <nav>
+  <nav id="d2-jump">
     <h1>北谷アメリカンビレッジ店</h1>
     <p>最大のフロア面積で広々とした開放的な空間でゆったりとくつろげます。<br>
     サンセットビーチ徒歩2分。さわやかな沖縄の風を感じながらかわいい子猫たちに癒されてみませんか？</p>
   </nav>
 
   <div class="curriculum">
-     <h2 class="subtitle">〜我が家の猫ちゃんたち〜</h2>   
+     <h2 class="subtitle" id="d3-jump">〜我が家の猫ちゃんたち〜</h2>
   </div>
 
   <!-- Slider main container -->
@@ -64,7 +66,7 @@
         <div class="swiper-button-next"></div>
     </div>
 
-    <table class="table">
+    <table class="table" id="d4-jump">
               <tr><th>入場料</th><th>時間</th><th>猫の餌</th></tr>
               <tr><td>500円</td><td>30分</td><td>有料</td></tr>
               <tr><td>1000円</td><td>60分</td><td>半額</t></td>
@@ -73,10 +75,10 @@
 
     <!-- <div><img src="img/scr.png"></div> -->
 
-    <div class="ggmap"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28610.62944501404!2d127.74617059999999!3d26.315854499999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e513cbab36563f%3A0x62f815c547126b!2z54yr44Kr44OV44KnUHVjaGlNYXJyeeaylue4hOWMl-iwt-W6lw!5e0!3m2!1sja!2sjp!4v1605014808879!5m2!1sja!2sjp" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+    <div class="ggmap" id="d5-jump"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28610.62944501404!2d127.74617059999999!3d26.315854499999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e513cbab36563f%3A0x62f815c547126b!2z54yr44Kr44OV44KnUHVjaGlNYXJyeeaylue4hOWMl-iwt-W6lw!5e0!3m2!1sja!2sjp!4v1605014808879!5m2!1sja!2sjp" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
 
 <form>
-  <div class="form-group">
+  <div class="form-group" id="d4-jump">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -92,7 +94,7 @@
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" id="d6-jump">Submit</button>
 </form>
 
       <div class="row2">
