@@ -54,10 +54,19 @@ nav {
   padding: 30px;
 }
 
+.row2{
+  text-align: center;
+}
+
+.row2 i{
+  margin:10px 50px;
+}
+
 .fa-instagram {
   color:#fff;
   background:radial-gradient(at 20% 120%,orange, #f15a4d 25%, #f13f79 55%, #9933ff 100%) no-repeat;
   border-radius:20%;
+
 }
 
 .fa-facebook-square {
@@ -65,7 +74,12 @@ nav {
 }
 
 .fa-line {
-  color: #00c300
+  color: #00c300;
+}
+
+footer{
+  text-align: center;
+  margin-top:50px;
 }
 
 
