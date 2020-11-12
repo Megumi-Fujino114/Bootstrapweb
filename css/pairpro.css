@@ -31,21 +31,21 @@ button{
 }
 
 .ggmap {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px;
-height: 0;
-overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
 .ggmap iframe,
 .ggmap object,
 .ggmap embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 70%%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%%;
 }
 
 nav {
@@ -98,6 +98,196 @@ footer{
   text-align: center;
   margin-top:50px;
 }
+
+.globalMenuSp {
+    display: none;
+  }
+
+@media only screen and (max-width: 375px){
+  header {
+    height: 40px;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .swiper-wrapper {
+    width: 100%;
+    height: 200px;
+  }
+
+  .swiper-slide img {
+    width: 375px;
+    height: 200px;
+  }
+
+  .col-2 {
+    display: none;
+  }
+
+  .row2 i {
+    margin: 10px;
+
+  }
+
+  /*　ハンバーガーボタン */
+  .hamburger {
+    display : block;
+    position: fixed;
+    z-index : 10;
+    /*right : 10px;*/
+    left: 10px;
+    top   : 5px;
+    width : 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center; 
+  }
+
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 5px ;
+    left    : 6px;
+    background : green;
+    -webkit-transition: 0.5s all;
+    -moz-transition   : 0.5s all;
+    transition        : 0.5s all;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+
+  /* ナビ開いてる時のボタン */
+
+  .hamburger.active span:nth-child(1) {
+    top : 16px;
+    left: 6px;
+    width: 24px;
+    background : #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    left: 60%;
+    opacity: 0;
+    -webkit-animation: active-btn17-bar02 .8s forwards;
+    animation: active-hamburger-bar02 .8s forwards;
+  }
+  @-webkit-keyframes active-hamburger-bar02 {
+    100% {
+      height: 0;
+    }
+  }
+  @keyframes active-hamburger-bar02 {
+    100% {
+      height: 0;
+    }
+  }
+  .hamburger.active span:nth-child(3) {
+    top: 16px;
+    width: 24px;
+    background : #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+
+
+  .hamburger::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    margin: -22px 0 0 -23px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: all .75s;
+  }
+  .hamburger.active::after {
+    border: 2px solid #fff;
+  }
+
+  .drower-bg.active2{
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    left : 0;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    /*opacity: 0;*/
+    transition: opacity .6s ease, visibility .6s ease;
+  }
+
+  nav.globalMenuSp {
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    left : 0;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    width: 100%;
+    /*height: 100%;*/
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease;
+  }
+
+  nav.globalMenuSp ul {
+    /*margin: 0 auto;*/
+    padding: 0;
+    width: 100%;
+  }
+
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .4s all;
+  }
+
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+  }
+  nav.globalMenuSp ul li:hover{
+    
+  }
+
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: 1em 0;
+    text-decoration :none;
+  }
+
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    opacity: 100;
+
+  }
+
+  .js-drower {
+    display: none;
+  }
+
+  .globalMenuSp {
+    display: inline-block;
+  }
 
 
 
