@@ -99,6 +99,7 @@ footer{
   margin-top:50px;
 }
 
+<<<<<<< HEAD
 .globalMenuSp {
     display: none;
   }
@@ -288,6 +289,20 @@ footer{
   .globalMenuSp {
     display: inline-block;
   }
+=======
+@keyframes typing { from { width: 0; } }
+@keyframes caret { 50% { border-color: transparent; } }
+
+p {
+font-family: monospace;
+width: 100ch;
+border-right: .08em solid;
+overflow: hidden;
+font-size: 2em;
+white-space: nowrap;
+animation: typing 5s steps(11, end), caret .5s step-end infinite;
+}
+>>>>>>> 59cd5da1e1ef4d3d86f8ce8577875b5e922da620
 
 
 
