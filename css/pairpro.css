@@ -6,6 +6,8 @@ body{
   background-color: #ffffff;
 }
 
+
+
 .swiper-container {
   box-sizing: border-box;
   width: 600px;
@@ -126,13 +128,6 @@ footer{
     text-align: center;
     align-items: center;
   }
-
- .youtube{
-  width: 300px;
-  height: 300px;
-  background-color: red;
-  display: none;
- }
 
 
 
