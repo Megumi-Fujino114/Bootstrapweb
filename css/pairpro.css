@@ -122,12 +122,17 @@ footer{
     display: none;
   }
 
-  #result{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-  }
+h2, #nekotube {
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#result{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
 
 
 
