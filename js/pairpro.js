@@ -14,24 +14,23 @@ var mySwiper = new Swiper ('.swiper-container', {
   });
 
   // ここからyoutube!
-  document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('btn').addEventListener('click',function() {
+  document.addEventListener('DOMContentLoaded', function () {
+  // document.getElementById('btn').addEventListener('click', function () {
     ajaxRequest();
-  });
+  // });
 
   function ajaxRequest() {
     let result = document.getElementById('result');
 
     let xhr = new XMLHttpRequest();
 
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
-        if(xhr.status === 200) {
+        if (xhr.status === 200) {
           result.textContent = '';
-          // console.log(xhr.responseText);
+          console.log(xhr.responseText);
           let res = JSON.parse(xhr.responseText);
-           console.log(res);
-           console.log(res.items)
+          console.log(res);
           for (item of res.items) {
             renderResult(item);
           }
@@ -46,15 +45,16 @@ var mySwiper = new Swiper ('.swiper-container', {
 
     let url = 'https://www.googleapis.com/youtube/v3/search?key=';
     let key = 'AIzaSyC12zZnei-w1S0Bc4UU5XcxW3htm4RiLn8';
-    let part = '&part=snippet&maxResults=3';
-    let q = '&q=' + document.getElementById('name').value;
+    let part = '&part=snippet&maxResults=1';
+    // let q = '&q=' + document.getElementById('name').value;
+    let q = '&q=cat';
     let type = '&type=video';
     xhr.open('GET', url + key + part + q + type, true);
     xhr.send(null);
   }
 
   function renderResult(item) {
-    
+
     //取得した内容を変数に格納
     let title = item.snippet.title;
     let thumbnail = item.snippet.thumbnails.medium;
@@ -70,7 +70,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     img.alt = title;
     img.width = thumbnail.width;
     img.height = thumbnail.height;
-    
+
     anchor.href = 'https://www.youtube.com/watch?v=' + videoId;
 
     text.textContent = title;
@@ -81,5 +81,4 @@ var mySwiper = new Swiper ('.swiper-container', {
     li.appendChild(text);
     document.getElementById('result').appendChild(li);
   }
-
 });
