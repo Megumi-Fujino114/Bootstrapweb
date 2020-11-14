@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let url = 'https://www.googleapis.com/youtube/v3/search?key=';
     let key = 'AIzaSyC12zZnei-w1S0Bc4UU5XcxW3htm4RiLn8';
-    let part = '&part=snippet&maxResults=1';
+    let part = '&part=snippet&maxResults=3';
     // let q = '&q=' + document.getElementById('name').value;
     let q = '&q=cat';
     let type = '&type=video';
