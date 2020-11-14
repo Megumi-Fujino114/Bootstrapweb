@@ -141,6 +141,10 @@ h2, #nekotube {
   text-align: center;
 }
 
+#result img {
+  width: 320px;
+  height: 180px;
+}
 
 
 @media only screen and (max-width: 375px){
