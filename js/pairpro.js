@@ -10,37 +10,22 @@ var mySwiper = new Swiper ('.swiper-container', {
             autoplay: {
             delay: 8000,
             disableOnInteraction: true
-<<<<<<< HEAD
   },
-        });
+});
 
-function ajaxRequest() {
-=======
-        }
-  });
-
-  // ここからyoutube!
-  document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   // document.getElementById('btn').addEventListener('click', function () {
     ajaxRequest();
   // });
 
   function ajaxRequest() {
->>>>>>> b6c07c250a205369ab076e4ba01a0134ca6216f2
     let result = document.getElementById('result');
 
     let xhr = new XMLHttpRequest();
+    // リクエストを投げられるようになる
+    // NEWって書くと実体するというのと同じ意味合い
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    let url = 'https://www.googleapis.com/youtube/v3/search?key=';
-    let key = 'AIzaSyAKaBqtZVCaiXqPl_hBusXiW3_f_S1oRDE';
-    let part = '&part=snippet&maxResults=10';
-=======
-    xhr.onreadystatechange = function() {
-=======
     xhr.onreadystatechange = function () {
->>>>>>> 9289d6928cec3ab60fcb8bb1860778e6e7d1ad3b
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           result.textContent = '';
@@ -61,15 +46,9 @@ function ajaxRequest() {
 
     let url = 'https://www.googleapis.com/youtube/v3/search?key=';
     let key = 'AIzaSyC12zZnei-w1S0Bc4UU5XcxW3htm4RiLn8';
-<<<<<<< HEAD
-    let part = '&part=snippet&maxResults=3';
->>>>>>> b6c07c250a205369ab076e4ba01a0134ca6216f2
-    let q = '&q=' + document.getElementById('name').value;
-=======
     let part = '&part=snippet&maxResults=1';
     // let q = '&q=' + document.getElementById('name').value;
     let q = '&q=cat';
->>>>>>> 9289d6928cec3ab60fcb8bb1860778e6e7d1ad3b
     let type = '&type=video';
     xhr.open('GET', url + key + part + q + type, true);
     xhr.send(null);
@@ -103,12 +82,7 @@ function ajaxRequest() {
     li.appendChild(text);
     document.getElementById('result').appendChild(li);
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 });
->>>>>>> b6c07c250a205369ab076e4ba01a0134ca6216f2
-=======
-});
->>>>>>> 9289d6928cec3ab60fcb8bb1860778e6e7d1ad3b
+
+
