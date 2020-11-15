@@ -6,6 +6,30 @@ body{
   background-color: #ffffff;
 }
 
+/* 試し */
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+body {
+  font-family: 'Merienda', cursive;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* height: 100vh;*/
+}
+.box {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+a {
+  color: #0bd;
+}
+
+/*  */
+
 
 
 .swiper-container {
